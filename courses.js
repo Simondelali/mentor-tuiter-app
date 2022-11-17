@@ -32,5 +32,5 @@ for (const c of courses){
 for (let i = 0; i < courses.length; i++){
     console.log(`${acronyms[i]} - ${courses[i]}`);
 }
-
+   
 
