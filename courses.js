@@ -25,9 +25,14 @@ for (const c of courses){
     let acronym = '';
     for (let w of words){
         acronym += w[0].toUpperCase();
+        
     }
     acronyms.push(acronym);
+    
 }
 //prints acronyms + course name
+for (let i = 0; i < courses.length; i++){
+    console.log(`${acronyms[i]} - ${courses[i]}`);
+}
 
 
