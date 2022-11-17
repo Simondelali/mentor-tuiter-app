@@ -21,14 +21,12 @@ for (let i = 0; i < courses.length; i++){
 // create acronyms
 const acronyms = [];
 for (const c of courses){
-    const words = c.split('');
+    const words = c.split(' ');
     let acronym = '';
     for (let w of words){
-        acronym += w[0].toUpperCase();
-        
+        acronym += w[0].toUpperCase();    
     }
-    acronyms.push(acronym);
-    
+    acronyms.push(acronym);    
 }
 //prints acronyms + course name
 for (let i = 0; i < courses.length; i++){
