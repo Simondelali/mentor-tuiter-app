@@ -21,10 +21,20 @@ function examList(){
 
     this.find = (code) => {
         for (const c of this.list)
-        if (c.code === code)
+            if (c.code === code)
         return c;
-        return undefined;
     }
+    this.listByScore = () => {
+        return [...this.list].sort((a,b) => (b.score - a.score));
+    }
+    this.average = () => {
+        let avg = 0;
+        for (const c of this.list)
+            avg += c.score;
+        avg  /= this.list.length;
+        return avg;
+    }
+
 
 }
 const exams1 = new exam('CE12', 'Computational Engineering', 3 , 78 , '12-08-22');
@@ -38,3 +48,9 @@ exams.add(exams3);
 
 console.log("FIND COURSE");
 console.log(exams.find('ME12'));
+
+console.log("LIST BY SCORE");
+console.log(exams.listByScore());
+
+console.log("AVERAGE");
+console.log(exams.average());
