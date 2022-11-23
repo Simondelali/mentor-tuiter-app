@@ -24,4 +24,4 @@ Develop a small JS program to manage the list of your courses.
 - Create a second array by computing the acronyms of the courses as the initial letters of the name. Acronyms should be all-capital letters.
   - For example, Computer Architectures -> CA.
 - Print the resulting list of acronyms and full course names.
-  - Extra: in alphabetical order of acronym. 
+  - Extra: in alphabetical order of acronym.
